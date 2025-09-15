@@ -1,0 +1,15 @@
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # Private Attribute
+
+    def get_balance(self):  # Getter
+        return self.__balance
+
+    def deposit(self, amount):  # Setter
+        if amount > 0:
+            self.__balance += amount
+
+# Using Encapsulation
+account = BankAccount(1000)
+account.deposit(500)
+print(account.get_balance())  # Output: 1500
