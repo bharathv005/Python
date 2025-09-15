@@ -1,0 +1,11 @@
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand  # Attribute
+        self.model = model  # Attribute
+
+    def display_info(self):  # Method
+        return f"{self.brand} {self.model}"
+
+# Creating an Object (Instance)
+car1 = Car("Toyota", "Camry")
+print(car1.display_info())  # Output: Toyota Camry
